@@ -50,8 +50,8 @@ async function fetchNft() {
     return data.nft_items || [];
   } catch (err) {
     if (err.response?.status === 429) {
-      console.log('⛔ 429 — пауза 2 минуты');
-      blockedUntil = Date.now() + 2 * 60 * 1000;
+      console.log('⛔ 429 — пауза 30 секунд');
+      blockedUntil = Date.now() + 30000;
     } else {
       console.error('TON API error:', err.message);
     }
