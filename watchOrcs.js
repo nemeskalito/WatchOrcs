@@ -5,7 +5,7 @@ const sharp = require('sharp');
 const fs = require('fs');
 
 // ====== CONFIG ======
-const API_TOKEN = "8528668156:AAFYMV7RoG86MO2mG0lJHWf310LjpjYTdxE";
+const API_TOKEN = "8528668156:AAGb1tRsVvEfUcxVhkNYwx43Y6U0afJ9cG0";
 const COLLECTION_ADDRESS =
   '0:463685d77d0474ec774386d92622ed688d34f07230741211d838c487dcfeec64';
 
