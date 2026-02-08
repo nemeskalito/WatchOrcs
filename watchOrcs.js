@@ -7,7 +7,7 @@ const fs = require('fs');
 const express = require('express');
 
 // ====== CONFIG ======
-const BOT_TOKEN = "8528668156:AAFuJCVfJHtFfRD8DQKeOCiK9Lt2-f79J5Y"
+const BOT_TOKEN = "8528668156:AAFlMyr3XGmPbAYnxnqTlEYT00opdBlVhWY";
 
 const COLLECTION_ADDRESS =
   '0:463685d77d0474ec774386d92622ed688d34f07230741211d838c487dcfeec64';
@@ -18,7 +18,7 @@ const IMG_WIDTH = 350;
 const CHECK_INTERVAL = 10000; // 10 сек
 const STATE_FILE = './state.json';
 
-let OFFSET = 29700;
+let OFFSET = 30926;
 let isChecking = false;
 let blockedUntil = 0;
 
@@ -141,10 +141,10 @@ bot.onText(/\/watch_orcs/, async (msg) => {
 });
 
 // ====== EXPRESS ======
+
 process.on('uncaughtException', e => console.error('UNCAUGHT:', e));
 process.on('unhandledRejection', e => console.error('UNHANDLED REJECTION:', e));
 
-const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => res.send('Bot is alive!'));
